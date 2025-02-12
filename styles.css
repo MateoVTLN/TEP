@@ -1,156 +1,161 @@
+
 /* css/styles.css */
 
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-}
-
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 1em 0;
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 15px;
-}
-
-nav ul li a, select {
-  color: #fff;
-  text-decoration: none;
-}
-
-main {
-  padding: 20px;
-}
-/*#######################   CAROUSEL IMAGES ACCEUIL     ##############################*/
-
-/* Conteneur parent pour placer les carousels en ligne */
-/* Conteneur principal pour aligner les carrousels */
-.carousel-wrapper {
-    display: flex;               /* Active Flexbox */
-    justify-content: center;     /* Centre les carrousels horizontalement */
-    gap: 10%;                    /* Espace de 10% entre les carrousels */
-    align-items: center;         /* Centre les carrousels verticalement si nécessaire */
-    flex-wrap: wrap;             /* Permet de s'adapter aux petits écrans en passant en dessous */
-    margin: 20px 0;              /* Espace autour du conteneur des carrousels */
-}
-
-/* Style des conteneurs individuels des carrousels */
-.carousel-container {
-    width: 30%;                  /* Chaque carrousel prend 40% de la largeur disponible */
-    position: relative;          /* Pour positionner les boutons */
-    background-color: #f0f0f0;   /* Couleur de fond pour mieux voir le carrousel */
-    border-radius: 10px;         /* Coins arrondis */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Ombre légère pour un effet de profondeur */
-    overflow: hidden;            /* Cache les débordements des images */
-}
-
-/* Assure que les images s'adaptent bien au conteneur */
-.carousel-image {
-    width: 100%;                 /* L'image occupe toute la largeur du carrousel */
-    height: auto;                /* Garde les proportions de l'image */
-    display: none;               /* Cache toutes les images sauf celle active */
-}
-
-.carousel-image.active {
-    display: block;              /* Affiche l'image active */
-}
-
-/* Style des boutons de navigation */
-button.prev, button.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 50%;
-    font-size: 18px;
-}
-
-button.prev {
-    left: 10px;
-}
-
-button.next {
-    right: 10px;
-}
-
-button.prev:hover, button.next:hover {
-    background-color: rgba(0, 0, 0, 0.8); /* Assombrit au survol */
-}
-
-/*#####################################################*/
-/*#######################   TABLEAU     ##############################*/
-
-.table-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2% 0;                   /* 2% de marge en haut et en bas */
-    width: 100%;                    /* Le conteneur prend toute la largeur disponible */
-}
-
-table {
-    border-collapse: collapse;
-    width: 80%;                     /* Le tableau prend 80% de la largeur de son conteneur */
-    background-color: #f9f9f9;
-    box-shadow: 0 2% 4% rgba(0, 0, 0, 0.1);  /* Ombre avec des pourcentages pour l'effet de profondeur */
-}
-
-th, td {
-    border: 0.1em solid #ddd;       /* Bordure fine en unités relatives */
-    padding: 1em 2em;               /* Espacement interne : 1em en haut/bas, 2em à gauche/droite */
-    text-align: center;
-}
-
-th {
-    background-color: #4CAF50;
-    color: white;
-    font-weight: bold;
-}
-
-tr:nth-child(even) {
-    background-color: #f2f2f2;      /* Lignes alternées */
-}
-
-#r4 {color: #c40606; font-weight: bold;}
-#r5 {color: #c406c4;font-weight: bold;}
-
-@media (max-width: 768px) {
-    table {
-        width: 95%;                /* Sur les écrans étroits (mobiles/tablettes), le tableau prend 95% de la largeur */
-    }
-
-    th, td {
-        padding: 0.8em 1em;        /* Réduit légèrement le padding pour les petits écrans */
-    }
-}
-/*#####################################################*/
-
-
-#footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: #333;
     color: #fff;
+    padding: 1em 0;
     text-align: center;
-    padding: 10px 0;
-    font-size: 14px;
-    z-index: 1;
-    opacity: 0.5;
-}
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a, select {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  /*#######################   CAROUSEL IMAGES ACCEUIL     ##############################*/
+  
+  /* Conteneur parent pour placer les carousels en ligne */
+  /* Conteneur principal pour aligner les carrousels */
+  .carousel-wrapper {
+      display: flex;               /* Active Flexbox */
+      justify-content: center;     /* Centre les carrousels horizontalement */
+      gap: 10%;                    /* Espace de 10% entre les carrousels */
+      align-items: center;         /* Centre les carrousels verticalement si nécessaire */
+      flex-wrap: wrap;             /* Permet de s'adapter aux petits écrans en passant en dessous */
+      margin: 20px 0;              /* Espace autour du conteneur des carrousels */
+  }
+  
+  /* Style des conteneurs individuels des carrousels */
+  .carousel-container {
+      width: 25%;                  /* Chaque carrousel prend 40% de la largeur disponible */
+      position: relative;          /* Pour positionner les boutons */
+      background-color: #f0f0f0;   /* Couleur de fond pour mieux voir le carrousel */
+      border-radius: 10px;         /* Coins arrondis */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Ombre légère pour un effet de profondeur */
+      overflow: hidden;            /* Cache les débordements des images */
+  }
+  
+  /* Assure que les images s'adaptent bien au conteneur */
+  .carousel-image {
+      width: 100%;                 /* L'image occupe toute la largeur du carrousel */
+      height: auto;                /* Garde les proportions de l'image */
+      display: none;               /* Cache toutes les images sauf celle active */
+  }
+  
+  .carousel-image.active {
+      display: block;              /* Affiche l'image active */
+  }
+  
+  /* Style des boutons de navigation */
+  button.prev, button.next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 50%;
+      font-size: 18px;
+  }
+  
+  button.prev {
+      left: 10px;
+  }
+  
+  button.next {
+      right: 10px;
+  }
+  
+  button.prev:hover, button.next:hover {
+      background-color: rgba(0, 0, 0, 0.8); /* Assombrit au survol */
+  }
+  
+  /*#####################################################*/
+  /*#######################   TABLEAU     ##############################*/
+  
+  .table-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2% 0;                   /* 2% de marge en haut et en bas */
+      width: 100%;                    /* Le conteneur prend toute la largeur disponible */
+  }
+  
+  table {
+      border-collapse: collapse;
+      width: 80%;                     /* Le tableau prend 80% de la largeur de son conteneur */
+      background-color: #f9f9f9;
+      box-shadow: 0 2% 4% rgba(0, 0, 0, 0.1);  /* Ombre avec des pourcentages pour l'effet de profondeur */
+  }
+  
+  th, td {
+      border: 0.1em solid #ddd;       /* Bordure fine en unités relatives */
+      padding: 1em 2em;               /* Espacement interne : 1em en haut/bas, 2em à gauche/droite */
+      text-align: center;
+  }
+  
+  th {
+      background-color: #4CAF50;
+      color: white;
+      font-weight: bold;
+  }
+  
+  tr:nth-child(even) {
+      background-color: #f2f2f2;      /* Lignes alternées */
+  }
+  
+  #r4 {color: #c406bb; font-weight: bold;}
+  #r5 {color: #c40606;font-weight: bold;}
+  #r3 {color: #0658c4;font-weight: bold;}
+  #r2 {color: #06c426;font-weight: bold;}
+  #r1 {color: #a1c406;font-weight: bold;}
+  
+  
+  @media (max-width: 768px) {
+      table {
+          width: 95%;                /* Sur les écrans étroits (mobiles/tablettes), le tableau prend 95% de la largeur */
+      }
+  
+      th, td {
+          padding: 0.8em 1em;        /* Réduit légèrement le padding pour les petits écrans */
+      }
+  }
+  /*#####################################################*/
+  
+  
+  #footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 14px;
+      z-index: 1;
+      opacity: 0.5;
+  }
 
