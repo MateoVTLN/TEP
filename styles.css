@@ -135,9 +135,13 @@ body {
   }
   
   tr:nth-child(even) {
-      background-color: #f2f2f2;      /* Lignes alternées */
+      background-color: #c7c7c7;      /* Lignes alternées */
   }
   
+
+
+  #dayo {color: #200096; font-weight: bold; background-color: #a1c406;}/**/
+  #daye {color: #200096; font-weight: bold; background-color: #e6bb46;}/**/
   #r4 {color: #c406bb; font-weight: bold;}
   #r5 {color: #c40606;font-weight: bold;}
   #r3 {color: #0658c4;font-weight: bold;}
