@@ -44,6 +44,7 @@ body {
       align-items: center;         /* Centre les carrousels verticalement si nécessaire */
       flex-wrap: wrap;             /* Permet de s'adapter aux petits écrans en passant en dessous */
       margin: 20px 0;              /* Espace autour du conteneur des carrousels */
+      margin-bottom: 3%;
   }
   
   /* Style des conteneurs individuels des carrousels */
@@ -105,11 +106,13 @@ body {
   }
   
   table {
-      border-collapse: collapse;
-      width: 80%;                     /* Le tableau prend 80% de la largeur de son conteneur */
-      background-color: #f9f9f9;
-      box-shadow: 0 2% 4% rgba(0, 0, 0, 0.1);  /* Ombre avec des pourcentages pour l'effet de profondeur */
-  }
+    border-collapse: collapse;
+    width: 100%;                     
+    background-color: #f9f9f9;
+    box-shadow: 0 2% 4% rgba(0, 0, 0, 0.1);  
+    margin: 0 auto; /* Centre la table horizontalement */
+}
+
   
   th, td {
       border: 0.1em solid #ddd;       /* Bordure fine en unités relatives */
