@@ -1,4 +1,3 @@
-// Liste des URLs d'images
 const imageList = [
     "https://risibank.fr/cache/medias/0/0/2/224/thumb.png",
     "https://risibank.fr/cache/medias/0/0/0/2/thumb.png",
