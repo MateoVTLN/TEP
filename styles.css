@@ -119,6 +119,14 @@ body {
       padding: 1em 2em;               /* Espacement interne : 1em en haut/bas, 2em à gauche/droite */
       text-align: center;
   }
+  thead th {
+    position: sticky;
+    top: 0;
+    background-color: #4CAF50; /* Couleur de fond pour garder la lisibilité */
+    color: white;
+    z-index: 10; /* Pour s’assurer que l’en-tête reste au-dessus du contenu */
+}
+
   
   th {
       background-color: #4CAF50;
